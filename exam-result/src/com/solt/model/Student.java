@@ -21,6 +21,7 @@ public class Student {
 	private int ecology;
 	private String subject;
 	private String distinction;
+	
 	public int getId() {
 		return id;
 	}

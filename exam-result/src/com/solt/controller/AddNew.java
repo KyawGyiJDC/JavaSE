@@ -87,12 +87,48 @@ public class AddNew implements Initializable{
 	}
 	public Result checkResult() {
 		if(student.getMyanmar() > 40) {
-			
+			student.setDistinction(checkDist());
 			return Result.PASS;
 		}
 	
 		return Result.FAIL;
 	}
+	
+	public String checkDist() {
+		String dist = "";
+		
+		if(student.getMyanmar()>=75) {
+			dist += " Myan";
+		}
+		
+		if(student.getEnglish()>=75) {
+			dist += " Eng";
+		}
+		
+		if(student.getMathematics()>=75) {
+			dist += " Math";
+		}
+		
+		if(student.getPhysics()>=75) {
+			dist += " Phy";
+		}
+		
+		if(student.getChemastry()>=75) {
+			dist += " Chem";
+		}
+		
+		if(student.getBiology()>=75) {
+			dist += " Bio";
+		}
+		
+		if(student.getEcology()>=75) {
+			dist += " Eco";
+		}
+		
+		return dist;
+		
+	}
+	
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
