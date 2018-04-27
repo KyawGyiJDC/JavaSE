@@ -1,8 +1,11 @@
 package com.solt.model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Student {
+public class Student implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 	public enum Result{
 		PASS,FAIL
 	}

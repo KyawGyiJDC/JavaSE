@@ -36,7 +36,6 @@ public class MemRepository implements Repository {
 	public List<Student> find() {
 		return list;
 	}
-
 	@Override
 	public void delete(int id) {
 		Student s = find(id);

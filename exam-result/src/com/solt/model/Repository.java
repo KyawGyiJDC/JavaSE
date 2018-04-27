@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface Repository {
 	static Repository getInstance() {
-		return MemRepository.getInstance();
+		return FileRepository.getInstance();
 	}
 	void add(Student s);
 	List<Student> find();
